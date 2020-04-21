@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
+    <div id="box">
+        {{msg}}
+    </div>
     <div>hello word</div>
 </body>
+<script>
+    var vm = new Vue({
+        el: '#box',
+        data: {
+            msg: 'aaaaa'
+        }
+    })
+</script>
 </html>
